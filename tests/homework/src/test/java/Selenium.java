@@ -106,11 +106,11 @@ public class Selenium {
         );
         driver.navigate().forward();
         // Log out
-        // SignInPage signInPage = projectPage.logoutUser();
-        // Assert.assertTrue(
-        //         "Sign In Page header does not contain expected text",
-        //         signInPage.getLoginHeader().toLowerCase().contains("Log in to Overleaf".toLowerCase())
-        // );
+        SignInPage signInPage = projectPage.logoutUser();
+        Assert.assertTrue(
+                "Sign In Page header does not contain expected text",
+                signInPage.getLoginHeader().toLowerCase().contains("Log in to Overleaf".toLowerCase())
+        );
     }
 
     @After

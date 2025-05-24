@@ -1,6 +1,6 @@
 .idea
-build
-.gradle
+/tests/homework/build/
+/tests/homework/.gradle
 gradle
 gradle.properties
 gradlew*
